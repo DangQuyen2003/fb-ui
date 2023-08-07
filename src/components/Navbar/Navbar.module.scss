@@ -1,0 +1,169 @@
+.navbar-container {
+    width: 100%;
+    height: 50px;
+    background-color: #011631;
+    display: flex;
+    align-items: center;
+    position: static;
+    top: 0;
+
+    .navbar-left {
+        flex: 3;
+
+        .logo{
+            font-size: 24px;
+            color: #fff;
+            margin-left: 20px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+
+    .navbar-center {
+        flex: 5;
+
+        .search{
+            width: 100%;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 30px;
+            border: 1px solid #fff;
+            display: flex;
+            align-items: center;
+
+            .search-icon{
+                font-size: 20px;
+                margin-left: 10px;
+                color: gray;
+                cursor: pointer;
+            }
+
+            .search-input{
+                padding: 4px;
+                border: none;
+                width: 90%;
+                height: 30px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .navbar-right {
+        flex: 4;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #fff;
+
+        .link{
+            margin-left: 20px;
+            font-style: 14px;
+            cursor: pointer;
+        }
+
+        .navbar-icons{
+            display: flex;
+            font-size: 20px;
+            gap: 10px;
+
+            .navbar-icon-item{
+                display: flex;
+                margin-right: 15px;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .badge{
+                width: 16px;
+                height: 16px;
+                background-color: red;
+                position: absolute;
+                font-size: 12px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                top: -9px;
+                right: -9px;
+                justify-content: center;
+            }
+        }
+
+        .image{
+            display: flex;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    .navbar-container{
+        flex: 2;
+        .logo{
+            font-weight: 500;
+        }
+    }
+
+    .navbar-center{
+        flex: 5;
+        .search{
+            width: 95%;
+
+            .search-input{
+                width: 70%;
+            }
+        }
+    }
+
+    .navbar-right{
+        .image{
+            margin-right: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .navbar-container{
+        .navbar-left{
+            flex: 3;
+        }
+
+        .navbar-right{
+            .link{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:576px) {
+
+    .navbar-container{
+        justify-content: space-between;
+
+        .navbar-left{
+            flex: 1;
+        }
+
+        .navbar-center{
+            flex: 1;
+            display: none;
+        }
+
+        .navbar-right{
+            flex: 1;
+        }
+    }
+
+    
+}
