@@ -1,0 +1,44 @@
+.menu{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .menu-text{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .menu-name{
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    &:hover{
+        background-color: #011631;
+        color: #fff;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .menu{
+        display: block;
+        
+        .menu-text{
+            display: none;
+        }
+        
+        .menu-name{
+            display: none;
+        }
+    
+        &:hover{
+            display: block;
+            // background-color: #011631;
+        }
+    }
+
+}
