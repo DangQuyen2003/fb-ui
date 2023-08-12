@@ -1,4 +1,7 @@
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+// import EditProfile from "./pages/EditProfile";
+import Register from "./pages/Register";
+// import Profile from "./pages/Profile/Profile";
 
 
 
@@ -6,7 +9,10 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div className="app">
-      <Home/>
+      {/* <Home/> */}
+      {/* <Profile/> */}
+      {/* <EditProfile/> */}
+      <Register/>
     </div>
   );
 }

@@ -1,0 +1,34 @@
+.right-bar-home {
+  .birthday-container {
+    display: flex;
+    align-items: center;
+
+    .birthday-img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .birthday-text {
+      font-weight: 300;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+  .right-bar-advert {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .right-bar-title{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  .right-bar-list-friends{
+    margin-left: 10px;
+  }
+}

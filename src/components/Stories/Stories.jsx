@@ -21,7 +21,7 @@ const Stories = () => {
           className={cx("story-background")}
         />
         <img
-          src="./assets/person/upload.png"
+          src="./assets/img/upload.png"
           alt=""
           className={cx("story-add")}
         />

@@ -1,0 +1,37 @@
+.friend-online{
+    
+    .list-friend{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        .profile-img-container{
+            margin-right: 10px;
+            position: relative;
+
+            .profile-img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .online{
+                position: absolute;
+                background-color: limegreen;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                top: -6px;
+                right: -6px;
+                border: 2px solid #fff;
+            }
+        }
+
+        .user-name{
+            font-weight: 500;
+            color: #333;
+        }
+    }
+}

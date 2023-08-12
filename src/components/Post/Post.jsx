@@ -2,7 +2,7 @@ import classNames from "classnames/bind";
 import style from "./Post.module.scss";
 import { Users } from "~/data";
 import { IconButton } from "@mui/material";
-import { Favorite, MoreVert, ThumbUp, ThumbUpAltOutlined } from "@mui/icons-material";
+import { ChatBubbleOutline, Favorite, MoreVert, ShareOutlined, ThumbUp, ThumbUpAltOutlined } from "@mui/icons-material";
 
 const cx = classNames.bind(style);
 
@@ -45,10 +45,18 @@ const Post = ({ post }) => {
 
         <hr className={cx("hr")}/>
 
-        <div className="post-footers">
+        <div className={cx("post-footers")}>
             <div className={cx("footer-item")}>
                 <ThumbUpAltOutlined className={cx("footer-icon")} />
                 <span className={cx("footer-text")}>Like</span>
+            </div>
+            <div className={cx("footer-item")}>
+                <ChatBubbleOutline className={cx("footer-icon")} />
+                <span className={cx("footer-text")}>Comment</span>
+            </div>
+            <div className={cx("footer-item")}>
+                <ShareOutlined className={cx("footer-icon")} />
+                <span className={cx("footer-text")}>Share</span>
             </div>
         </div>
 

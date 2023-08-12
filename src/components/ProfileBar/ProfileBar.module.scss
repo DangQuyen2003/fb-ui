@@ -1,0 +1,76 @@
+.profile-bar{
+    flex: 3.5;
+    padding: 0 20px 0 0;
+    margin-left: 10px;
+
+    .profile-bar-heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+
+        .profile-bar-title{
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .edit-btn{
+            border: none;
+            padding: 7px;
+            border-radius: 5px;
+            background-color: #011631;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .profile-bar-info{
+        margin-bottom: 30px;
+
+        .profile-bar-item{
+            margin-bottom: 10px;
+        }
+
+        .profile-info-key{
+            font-weight: 500;
+            margin-right: 20px;
+        }
+
+        .profile-info-value{
+            font-weight: 300;
+        }
+    }
+
+    .profile-bar-followings{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .profile-bar-follow{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            .follow-img{
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            .follow-name{
+                align-self: center;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .profile-bar{
+        display: none;
+    }
+}
