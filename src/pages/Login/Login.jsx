@@ -1,56 +1,54 @@
 import classNames from "classnames/bind";
-import styles from "./Register.module.scss";
+import styles from "./Login.module.scss";
 
 const cx = classNames.bind(styles);
 
-const Register = () => {
+const Login = () => {
   return (
-    <div className={cx("register")}>
-      <div className={cx("register-wrapper")}>
-        <div className={cx("register-left")}>
-          <h3 className={cx("register-logo")}>Clone UI Facebook</h3>
-          <span className={cx("register-desc")}>
+    <div className={cx("login")}>
+      <div className={cx("login-wrapper")}>
+        <div className={cx("login-left")}>
+          <h3 className={cx("login-logo")}>Facebook</h3>
+          <span className={cx("login-desc")}>
             Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống
             của bạn.
           </span>
         </div>
-        <div className={cx("register-right")}>
-          <div className={cx("register-box")}>
+        <div className={cx("login-right")}>
+          <div className={cx("login-box")}>
             <form>
-              <input
+              {/* <input
                 type="text"
                 placeholder="Họ và tên"
                 id="username"
-                className={cx("register-input")}
+                className={cx("login-input")}
                 required
-              />
+              /> */}
               <input
                 type="email"
                 placeholder="Email"
                 id="email"
-                className={cx("register-input")}
+                className={cx("login-input")}
                 required
               />
               <input
                 type="password"
                 placeholder="Password"
                 id="password"
-                className={cx("register-input")}
+                className={cx("login-input")}
                 required
               />
-              <input
+              {/* <input
                 type="password"
                 placeholder="Confirm Password"
                 id="confirmPassword"
-                className={cx("register-input")}
+                className={cx("login-input")}
                 required
-              />
-              <button type="submit" className={cx("register-btn")}>
-                  Đăng ký
+              /> */}
+              <button type="submit" className={cx("login-btn")}>
+                Đăng nhập
               </button>
-              <button className={cx("login-btn")}>
-                  Đăng nhập
-              </button>
+              <button className={cx("create-btn")}>Tạo tài khoản mới</button>
             </form>
           </div>
         </div>
@@ -59,4 +57,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;

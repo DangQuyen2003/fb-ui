@@ -1,5 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./ProfileBar.module.scss";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -8,7 +9,9 @@ const ProfileBar = () => {
     <div className={cx("profile-bar")}>
       <div className={cx("profile-bar-heading")}>
         <span className={cx("profile-bar-title")}>user information</span>
-        <span className={cx("edit-btn")}>edit profile</span>
+        <Link to="/profile/userId/edit">
+          <span className={cx("edit-btn")}>edit profile</span>
+        </Link>
       </div>
 
       <div className={cx("profile-bar-info")}>
